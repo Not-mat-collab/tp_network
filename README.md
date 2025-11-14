@@ -71,8 +71,7 @@ Facilement, on sait que les 3 sont dans le reseau backend et seulement proxy et 
 
 Pour proxy et maria db on va chercher l'image sur le docker hub donc onn met "image :", par contre comme le flask est defini avec le Dockerfile, on met "build :".
 
-Pour definir la partie environnement, il fallait regarder dans le app.py les variables necessaire, puis la doc web nous guide pour la facon de rediger.
-meme si pas claire dutout > [‌](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+Pour definir la partie environnement, il fallait regarder dans le app.py les variables necessaire, puis la doc web nous guide pour la facon de rediger. 
 
 
 Pour les aprties expose, 5000 pour flask car c'est spécifié dans le docker file, et 3306 pour mariadb parce que c'est le port ar défaut.
@@ -98,3 +97,5 @@ localhost:8080 affiche bien Hello from app cf:image
 ocalhost:8080/health affiche bien db reachable status ok cf:image1
 
 Dans tout ca, la commande docker compose up -d --build a été utiliser 
+
+Sujet et réponse du TP présents sur Internet (je m'en suis pas servit mais ca peut servir aux prochains) : [‌TP_Docker_Flask.pdf](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
